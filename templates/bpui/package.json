@@ -1,0 +1,49 @@
+{
+  "name": "${projectName}",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build-router": "bpui-build router2",
+    "build:analyzer": "bpui-build router2 && BPUI_ANALYZER=1 vue-cli-service build",
+    "build": "bpui-build router2 && vue-cli-service build",
+    "build:dev": "bpui-build router2 && vue-cli-service build --mode development",
+    "dev": "bpui-build router2 && vue-cli-service serve"
+  },
+  "dependencies": {
+    "@bpui/ui": "0.0.33",
+    "core-js": "^3.6.4",
+    "register-service-worker": "^1.7.2",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.2",
+    "vue-property-decorator": "^8.4.0"
+  },
+  "devDependencies": {
+    "@bpui/build-cli": "0.0.12",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-pwa": "~4.4.0",
+    "@vue/cli-plugin-typescript": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^5.0.5",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "tslib": "^2.3.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^4.4.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE 10"
+  ]
+}
